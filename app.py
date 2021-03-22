@@ -6,7 +6,7 @@ snoozeUntil = datetime.now()
 print("snooze until: " + str(snoozeUntil))
 
 @app.route('/isSnoozed')
-def hello_world():
+def is_snoozed():
     global snoozeUntil
     isSnoozed = snoozeUntil > datetime.now()
     return (str(isSnoozed))
